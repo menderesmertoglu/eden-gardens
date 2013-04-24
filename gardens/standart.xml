@@ -1,0 +1,868 @@
+﻿<?xml version = '1.0' ?>
+<panorama>
+	<parameters>
+    panoName=360/standart
+    panotype = cube0
+   
+    pan= -72
+    tilt= 0
+
+    zoomHome=0.7
+    zoomMax= 1.7
+    zoomMin=0.7
+    segments=20
+    qualityStatic=medium
+    
+    loaderBackColor=#333333	 
+    
+    layer_2 = files/hotspots.swf
+    layer_3 = files/autorotate.swf
+    layer_4 = files/glassMeter.swf
+    layer_5 = files/tooltips.swf
+    layer_20 = files/fppcontextmenu.swf
+      
+	
+	</parameters>
+
+	<autorotator>
+		speed = -0.2
+		interval = 30
+		pause = 3500
+		quality = medium
+		tilt = 0
+    </autorotator>
+	
+	<tooltips>
+		altFont   = Verdana;
+		altColor  = 0xffffff;
+		altSize   = 11;
+		altFill   = 0xb49a5f;
+		altAlpha  = 1 ;
+		altStroke = 0xb49a5f;
+	</tooltips>
+
+	<FPPContextMenu>
+		    www.sanalgezinti.com = http://www.sanalgezinti.com|_blank
+      	separator
+       	hidemenu = true
+ 	</FPPContextMenu>
+
+
+<cl_dropdown_menu>
+transitionTime = 500
+tranSitIonType = stripes
+xMlPath = pano
+rows = 22
+menux = 50
+menuy = 550
+menux = 30
+menuy = -50
+menuminx = 200
+menuminy = 300
+menuwidth = 220
+menuheight = 22
+menufont = Verdana
+menuFontsize = 11
+menufontcoLor = ff0000
+
+ANA GIRIS=360/giris&pan=91&tilt=0&zoom=0.7;
+Reception=360/reception&pan=-178&tilt=0&zoom=0.7;
+BAHCE - ODALAR 2=360/genel_gorunum1&pan=33&tilt=0&zoom=0.7;
+BAHCE - ODALAR 1=360/genel_gorunum2&pan=123&tilt=0&zoom=0.7;
+
+        RESTAURANT & BAR
+RESTAURAS TERAS=360/restaurant&pan=17&tilt=0&zoom=0.7;
+KAPALI RESTAURANT & BUFELER=360/bufeler&pan=167&tilt=0&zoom=0.7;
+Lobby Bar=360/lobby_bar&pan=130&tilt=0&zoom=0.7;
+Lobby - Teras=360/lobby_teras&pan=32&tilt=0&zoom=0.7;
+
+        AKTİVİTE ALANLARI
+Havuz=360/havuz&pan=163&tilt=0&zoom=0.7;
+Havuz - Akşam=360/havuz_aksam&pan=150&tilt=0&zoom=0.7;
+ISKELE & PLAJ=360/iskele&pan=-95&tilt=0&zoom=0.7;
+GENEL GORUNUM=360/iskele_aksam&pan=-175&tilt=0&zoom=0.7;
+COCUK KLUBU=360/mini_club&pan=125&tilt=0&zoom=0.7;
+Hamam=360/hamam&pan=-26&tilt=0&zoom=0.7;
+Kapalı Havuz=360/kapali_havuz&pan=8&tilt=0&zoom=0.7;
+Toplantı Salonu=360/toplanti&pan=-12&tilt=0&zoom=0.7;
+
+        ODALAR
+Standart Oda=360/standart&pan=-72&tilt=0&zoom=0.7;
+Standart Banyo=360/banyo&pan=-47&tilt=0&zoom=0.7;
+Mini Suite=360/mini_suite&pan=-9&tilt=0&zoom=0.7;
+VIP Home Bahçe=360/vip_home_bahce&pan=-97&tilt=0&zoom=0.7;
+VIP Home Çocuk Odası=360/vip_home_cocuk&pan=96&tilt=0&zoom=0.7;
+VIP Home Salon=360/vip_home_salon&pan=16&tilt=0&zoom=0.7;
+VIP Home Yatak Odası=360/vip_home_yatak&pan=-160&tilt=0&zoom=0.7;
+
+Liman=360/liman&pan=-86&tilt=0&zoom=0.7;
+balkon=360/balkon&pan=-173&tilt=0&zoom=0.7;
+tekne=360/tekne&pan=-50&tilt=0&zoom=0.7;
+
+</cl_dropdown_menu>	
+
+<hotspots>
+	
+	<global 
+
+	LocalConnectionID="lc_dropdown" 
+		
+	startAR="
+	pause.visible=1; play.visible=0;
+	external.autorotator.disabled = 0;
+	pano.pan_v=0;
+	pano.tilt_v=0;
+	pano.zoom_v=0;
+	"
+
+	stopAR="
+	pause.visible=0; play.visible=1;
+	external.autorotator.disabled = 1;
+	pano.pan_v=0;
+	pano.tilt_v=0;
+	pano.zoom_v=0;
+	"
+	 
+	 
+	hideList="
+	list.staticY=-900,700;
+	//list.visible=0;
+	listbtn1.visible=0;
+	listbtn2.visible=1;
+	showTXT();
+	"
+  showList="
+	list.staticY=0,700;
+	list.visible=1;
+	listbtn1.visible=1;
+	listbtn2.visible=0;
+	hideTXT();
+	"
+  
+	hideTXT="
+	info1.visible=0;
+	info2.visible=1;
+	txt_bgr.scaleX=0,600,easyIn;
+	txt_close.visible=0;
+	
+	pano.tint=0,800;
+	
+	txt1.staticX=800,800;
+	txt2.staticX=800,800;
+	txt3.staticX=800,800;
+	txt4.staticX=800,800;
+	txt5.staticX=800,800;
+	txt6.staticX=800,800;
+	txt7.staticX=800,800;
+	txt8.staticX=800,800;	
+	txt9.staticX=800,800;
+	txt10.staticX=800,800;
+	txt11.staticX=800,800;
+	txt12.staticX=800,800;
+	txt13.staticX=800,800;
+	txt14.staticX=800,800;
+	txt15.staticX=800,800;
+	txt16.staticX=800,800;
+	txt17.staticX=800,800;
+	txt18.staticX=800,800;
+	txt19.staticX=800,800;
+	txt20.staticX=800,800;
+	txt21.staticX=800,800;
+	txt22.staticX=800,800;
+	txt23.staticX=800,800;
+	txt24.staticX=800,800;
+	txt25.staticX=800,800;
+	txt26.staticX=800,800;
+	txt27.staticX=800,800;
+	txt28.staticX=800,800;
+	txt29.staticX=800,800;
+	txt30.staticX=800,800;
+
+	"
+
+	showTXT="
+	info1.visible=1;
+	info2.visible=0;
+	txt_bgr.scaleX=8.4,800,easyOut;
+	txt_close.visible=1;
+	
+	txt1.staticX=330,800;
+	txt2.staticX=330,800;
+	txt3.staticX=330,800;
+	txt4.staticX=330,800;
+	txt5.staticX=330,800;
+	txt6.staticX=330,800;
+	txt7.staticX=330,800;
+	txt8.staticX=330,800;	
+	txt9.staticX=330,800;
+	txt10.staticX=330,800;
+	txt11.staticX=330,800;
+	txt12.staticX=330,800;	
+	txt13.staticX=330,800;	
+	txt14.staticX=330,800;	
+	txt15.staticX=330,800;	
+	txt16.staticX=330,800;	
+	txt17.staticX=330,800;	
+	txt18.staticX=330,800;	
+	txt19.staticX=330,800;
+	txt20.staticX=330,800;
+	txt21.staticX=330,800;
+	txt22.staticX=330,800;
+	txt23.staticX=330,800;
+	txt24.staticX=330,800;
+	txt25.staticX=330,800;
+	txt26.staticX=330,800;
+	txt27.staticX=330,800;
+	txt28.staticX=330,800;
+	txt29.staticX=330,800;
+	txt30.staticX=330,800;
+
+	"
+  
+
+  loadpanoHideList="hideList();"
+
+loadpano01="loadPano(panoName=360/giris&pan=91&tilt=0&zoom=0.7;hideList"
+loadpano02="loadPano(panoName=360/reception&pan=-178&tilt=0&zoom=0.7;hideList"
+loadpano03="loadPano(panoName=360/genel_gorunum1&pan=33&tilt=0&zoom=0.7;hideList"
+loadpano04="loadPano(panoName=360/genel_gorunum2&pan=123&tilt=0&zoom=0.7;hideList"
+
+loadpano05="loadPano(panoName=360/restaurant&pan=17&tilt=0&zoom=0.7;hideList"
+loadpano06="loadPano(panoName=360/bufeler&pan=167&tilt=0&zoom=0.7;hideList"
+loadpano07="loadPano(panoName=360/lobby_bar&pan=130&tilt=0&zoom=0.7;hideList"
+loadpano08="loadPano(panoName=360/lobby_teras&pan=32&tilt=0&zoom=0.7;hideList"
+
+loadpano09="loadPano(panoName=360/havuz&pan=163&tilt=0&zoom=0.7;hideList"
+loadpano10="loadPano(panoName=360/havuz_aksam&pan=150&tilt=0&zoom=0.7;hideList"
+loadpano11="loadPano(panoName=360/iskele&pan=-95&tilt=0&zoom=0.7;hideList"
+loadpano12="loadPano(panoName=360/iskele_aksam&pan=-175&tilt=0&zoom=0.7;hideList"
+loadpano13="loadPano(panoName=360/mini_club&pan=125&tilt=0&zoom=0.7;hideList"
+loadpano14="loadPano(panoName=360/hamam&pan=-26&tilt=0&zoom=0.7;hideList"
+loadpano15="loadPano(panoName=360/kapali_havuz&pan=8&tilt=0&zoom=0.7;hideList"
+loadpano16="loadPano(panoName=360/toplanti&pan=-12&tilt=0&zoom=0.7;hideList"
+
+loadpano20="loadPano(panoName=360/standart&pan=-72&tilt=0&zoom=0.7;hideList"
+loadpano21="loadPano(panoName=360/banyo&pan=-47&tilt=0&zoom=0.7;hideList"
+loadpano22="loadPano(panoName=360/mini_suite&pan=-9&tilt=0&zoom=0.7;hideList"
+loadpano23="loadPano(panoName=360/vip_home_bahce&pan=-97&tilt=0&zoom=0.7;hideList"
+loadpano24="loadPano(panoName=360/vip_home_cocuk&pan=96&tilt=0&zoom=0.7;hideList"
+loadpano25="loadPano(panoName=360/vip_home_salon&pan=16&tilt=0&zoom=0.7;hideList"
+loadpano26="loadPano(panoName=360/vip_home_yatak&pan=-160&tilt=0&zoom=0.7;hideList"
+
+loadpano30="loadPano(panoName=360/liman&pan=-86&tilt=0&zoom=0.7;hideList"
+loadpano31="loadPano(panoName=360/balkon&pan=-173&tilt=0&zoom=0.7;hideList"
+loadpano32="loadPano(panoName=360/tekne&pan=-50&tilt=0&zoom=0.7;hideList"
+
+loadpano33="loadPano(panoName=360/1banyo&pan=-50&tilt=0&zoom=0.7;hideList"
+loadpano33="loadPano(panoName=360/2banyo&pan=-50&tilt=0&zoom=0.7;hideList"
+
+	>
+ 
+<!-- logo -->
+<spot id="logo" url="images/logo.png" static="1" staticX="190" staticY="60" salign="LT" depth="200" buttonMode="0"  />
+
+<spot id="sg" url="images/sg.png" alpha=".3" static="1" staticX="-30" staticY="-20" salign="RB" align="RB" depth="200"  />
+
+
+<!-- OKLAR -->
+
+	//  genel gorunum 2  -> genel gorunum1
+	<spot id="s1"  alt="Bahçe - Odalar 2" url="images/arrow.png" depth="21" buttonMode="1"  pan="-117" tilt="-9" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/genel_gorunum2" rotation="0" 
+	onClick="pano.pan=-117,600; 
+	         pano.tilt=-9,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano03"	/> 
+	
+		//  genel gorunum 1 -> genel gorunum2
+	<spot id="s2"  alt="Bahçe - Odalar 1" url="images/arrow.png" depth="21" buttonMode="1"  pan="94" tilt="8" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/genel_gorunum1" rotation="0" 
+	onClick="pano.pan=94,600; 
+	         pano.tilt=8,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano04"	/> 
+	
+	
+			//  giris -> toplantı salaonu
+	<spot id="s3"  alt="Toplantı Salonu" url="images/arrow.png" depth="21" buttonMode="1"  pan="-106" tilt="5" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/giris" rotation="0" 
+	onClick="pano.pan=-106,600; 
+	         pano.tilt=5,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano16"	/> 
+	
+	
+				//  toplantı salaonu   -> giris
+	<spot id="s4"  alt="Ana Giriş" url="images/arrow.png" depth="21" buttonMode="1"  pan="-104" tilt="-1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/toplanti" rotation="-90" 
+	onClick="pano.pan=-104,600; 
+	         pano.tilt=-1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano01"	/> 
+	
+				//  giris -> resepsiyon
+	<spot id="s5"  alt="Resepsiyon" url="images/arrow.png" depth="21" buttonMode="1"  pan="146" tilt="-6" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/giris" rotation="0" 
+	onClick="pano.pan=146,600; 
+	         pano.tilt=-6,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano02"	/> 
+	
+					//   resepsiyon  -> giris
+	<spot id="s6"  alt="Ana Giriş" url="images/arrow.png" depth="21" buttonMode="1"  pan="-76" tilt="-1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/reception" rotation="0" 
+	onClick="pano.pan=-76,600; 
+	         pano.tilt=-1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano01"	/>
+	
+						//   havuz  -> restorant
+	<spot id="s7"  alt="Restaurant Teras" url="images/arrow.png" depth="21" buttonMode="1"  pan="158" tilt="7" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz" rotation="0" 
+	onClick="pano.pan=158,600; 
+	         pano.tilt=7,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano05"	/>
+	
+						//   havuz  -> lobby teras
+	<spot id="s8"  alt="Lobby Teras" url="images/arrow.png" depth="21" buttonMode="1"  pan="176" tilt="12" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz" rotation="0" 
+	onClick="pano.pan=176,600; 
+	         pano.tilt=12,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano08"	/>
+	
+							//   havuz  -> genel gorunum
+	<spot id="s9"  alt="Bahçe Odalar 2" url="images/arrow.png" depth="21" buttonMode="1"  pan="-129" tilt="-1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz" rotation="0" 
+	onClick="pano.pan=-129,600; 
+	         pano.tilt=-1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano03"	/>
+	
+								//   havuz  ->resepsiyon
+	<spot id="s10"  alt="Resepsiyon" url="images/arrow.png" depth="21" buttonMode="1"  pan="-168" tilt="18" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz" rotation="180" 
+	onClick="pano.pan=-168,600; 
+	         pano.tilt=18,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano02"	/>
+	
+		//    resepsiyon  -> havuz
+	<spot id="s11"  alt="Havuz" url="images/arrow.png" depth="21" buttonMode="1"  pan="84" tilt="-9" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/reception" rotation="0" 
+	onClick="pano.pan=84,600; 
+	         pano.tilt=-9,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano09"	/>
+	
+		//    lobby teras  -> havuz
+	<spot id="s12"  alt="Havuz" url="images/arrow.png" depth="21" buttonMode="1"  pan="58" tilt="-22" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/lobby_teras" rotation="0" 
+	onClick="pano.pan=58,600; 
+	         pano.tilt=-22,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano09"	/>
+	
+			//    restaurant  -> havuz
+	<spot id="s13"  alt="Havuz" url="images/arrow.png" depth="21" buttonMode="1"  pan="-133" tilt="-13" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/restaurant" rotation="0" 
+	onClick="pano.pan=-133,600; 
+	         pano.tilt=-13,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano09"	/>
+	
+				//   genel gorunum 1  -> havuz
+	<spot id="s14"  alt="Havuz" url="images/arrow.png" depth="21" buttonMode="1"  pan="-120" tilt="-10" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/genel_gorunum1" rotation="90" 
+	onClick="pano.pan=-120,600; 
+	         pano.tilt=-10,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano09"	/>
+	
+							//   havuz  -> vip home
+	<spot id="s15"  alt="VİP Home" url="images/arrow.png" depth="21" buttonMode="1"  pan="-70" tilt="-1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz" rotation="0" 
+	onClick="pano.pan=-70,600; 
+	         pano.tilt=-1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano23"	/>
+	
+			//  vip home   ->   havuz 
+	<spot id="s16"  alt="Havuz" url="images/arrow.png" depth="21" buttonMode="1"  pan="8" tilt="0" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/vip_home_bahce" rotation="0" 
+	onClick="pano.pan=8,600; 
+	         pano.tilt=0,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano09"	/>
+	
+								//   havuz  -> iskele
+	<spot id="s17"  alt="İskele & Plaj" url="images/arrow.png" depth="21" buttonMode="1"  pan="38" tilt="-4" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz" rotation="0" 
+	onClick="pano.pan=38,600; 
+	         pano.tilt=-4,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano11"	/>
+	
+				//  iskele  ->   havuz 
+	<spot id="s18"  alt="Havuz" url="images/arrow.png" depth="21" buttonMode="1"  pan="88" tilt="-2" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/iskele" rotation="0" 
+	onClick="pano.pan=88,600; 
+	         pano.tilt=-2,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano09"	/>
+	
+				//  vip home   ->   salon
+	<spot id="s19"  alt="VİP Home Salon" url="images/arrow.png" depth="21" buttonMode="1"  pan="158" tilt="-1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/vip_home_bahce" rotation="0" 
+	onClick="pano.pan=158,600; 
+	         pano.tilt=-1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano25"	/>
+	
+					//  vip home salon   ->   bahçe
+	<spot id="s20"  alt="VİP Home Bahçe" url="images/arrow.png" depth="21" buttonMode="1"  pan="110" tilt="-7" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/vip_home_salon" rotation="0" 
+	onClick="pano.pan=110,600; 
+	         pano.tilt=-7,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano23"	/>
+	
+					//  vip home salon   ->cocuk
+	<spot id="s21"  alt="Küçük Yatak Odası" url="images/arrow.png" depth="21" buttonMode="1"  pan="-76" tilt="-6" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/vip_home_salon" rotation="0" 
+	onClick="pano.pan=-76,600; 
+	         pano.tilt=-6,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano24"	/>
+	
+						//  vip home salon   ->yatak odası
+	<spot id="s22"  alt="Büyük Yatak Odası" url="images/arrow.png" depth="21" buttonMode="1"  pan="-69" tilt="-6" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/vip_home_salon" rotation="90" 
+	onClick="pano.pan=-69,600; 
+	         pano.tilt=-6,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano26"	/>
+	
+							//  vip home salon   ->banyo
+	<spot id="s23"  alt="Banyo" url="images/arrow.png" depth="21" buttonMode="1"  pan="-87" tilt="-6" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/vip_home_salon" rotation="-90" 
+	onClick="pano.pan=-87,600; 
+	         pano.tilt=-6,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano33"	/>
+	
+	
+				//    banyo -> vip home salon 
+	<spot id="s24"  alt="VİP Home Salon" url="images/arrow.png" depth="21" buttonMode="1"  pan="170" tilt="-5" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/1banyo" rotation="0" 
+	onClick="pano.pan=170,600; 
+	         pano.tilt=-5,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano25"	/>
+	
+					//  cocuk -> vip home salon 
+	<spot id="s24"  alt="VİP Home Salon" url="images/arrow.png" depth="21" buttonMode="1"  pan="-11" tilt="-5" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/vip_home_cocuk" rotation="0" 
+	onClick="pano.pan=-11,600; 
+	         pano.tilt=-5,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano25"	/>
+	
+						// yatak -> vip home salon 
+	<spot id="s25"  alt="VİP Home Salon" url="images/arrow.png" depth="21" buttonMode="1"  pan="86" tilt="-5" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/vip_home_yatak" rotation="-90" 
+	onClick="pano.pan=86,600; 
+	         pano.tilt=-5,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano25"	/>
+	
+	
+		
+						// Lobby bar -> lobby teras
+	<spot id="s26"  alt="Lobby Teras" url="images/arrow.png" depth="21" buttonMode="1"  pan="-2" tilt="-4" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/lobby_bar" rotation="0" 
+	onClick="pano.pan=-2,600; 
+	         pano.tilt=-4,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano08"	/>
+	
+			
+						// Lobby teras -> lobby bar
+	<spot id="s27"  alt="Lobby Bar" url="images/arrow.png" depth="21" buttonMode="1"  pan="-103" tilt="-3" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/lobby_teras" rotation="0" 
+	onClick="pano.pan=-103,600; 
+	         pano.tilt=-3,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano07"	/>
+	
+							// reception -> kapalı havuz
+	<spot id="s28"  alt="Kapalı Havuz" url="images/arrow.png" depth="21" buttonMode="1"  pan="155" tilt="-4" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/reception" rotation="-90" 
+	onClick="pano.pan=155,600; 
+	         pano.tilt=-4,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano15"	/>
+	
+								//   kapalı havuz -> hamam
+	<spot id="s29"  alt="Hamam" url="images/arrow.png" depth="21" buttonMode="1"  pan="10" tilt="-3" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/kapali_havuz" rotation="0" 
+	onClick="pano.pan=10,600; 
+	         pano.tilt=-3,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano14"	/>
+
+
+							//   hamam  ->reception
+	<spot id="s30"  alt="Resepsiyon" url="images/arrow.png" depth="21" buttonMode="1"  pan="-166" tilt="-3" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/hamam" rotation="0" 
+	onClick="pano.pan=-166,600; 
+	         pano.tilt=-3,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano02"	/>
+	
+								//  restaurant -> büfeler
+	<spot id="s31"  alt="Kapalı Restaurant Büfeler" url="images/arrow.png" depth="21" buttonMode="1"  pan="119" tilt="-3" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/restaurant" rotation="0" 
+	onClick="pano.pan=119,600; 
+	         pano.tilt=-3,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano06"	/>
+	
+									//  büfeler  ->  restaurant
+	<spot id="s32"  alt="Restaurant Teras" url="images/arrow.png" depth="21" buttonMode="1"  pan="33" tilt="-3" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/bufeler" rotation="0" 
+	onClick="pano.pan=33,600; 
+	         pano.tilt=-3,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano05"	/>
+	
+										//  cocuk kulubu  -> havuz
+	<spot id="s33"  alt="Havuz" url="images/arrow.png" depth="21" buttonMode="1"  pan="-168" tilt="-4" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/mini_club" rotation="-90" 
+	onClick="pano.pan=-168,600; 
+	         pano.tilt=-4,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano09"	/>
+
+
+										//  cocuk kulubu  ->iskele
+	<spot id="s34"  alt="İskele & Plaj" url="images/arrow.png" depth="21" buttonMode="1"  pan="-127" tilt="-1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/mini_club" rotation="-90" 
+	onClick="pano.pan=-127,600; 
+	         pano.tilt=-1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano11"	/>
+	
+									//   havuz  ->miniclub
+	<spot id="s35"  alt="Çocuk Klubü" url="images/arrow.png" depth="21" buttonMode="1"  pan="114" tilt="5" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz" rotation="0" 
+	onClick="pano.pan=114,600; 
+	         pano.tilt=5,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano13"	/>
+
+
+							//   havuz  -> genel gorunum
+	<spot id="s36"  alt="Bahçe Odalar 1" url="images/arrow.png" depth="21" buttonMode="1"  pan="-127" tilt="7" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz" rotation="0" 
+	onClick="pano.pan=-127,600; 
+	         pano.tilt=7,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano04"	/>
+	
+								//   havuz  -> mini suite
+	<spot id="s37"  alt="Mini Suite" url="images/arrow.png" depth="21" buttonMode="1"  pan="-168" tilt="10" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz" rotation="90" 
+	onClick="pano.pan=-168,600; 
+	         pano.tilt=10,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano22"	/>
+								
+								
+								//   havuz  -> standart oda
+	<spot id="s38"  alt="Standart Oda" url="images/arrow.png" depth="21" buttonMode="1"  pan="-168" tilt="6" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz" rotation="90" 
+	onClick="pano.pan=-168,600; 
+	         pano.tilt=6,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano20"	/>
+	
+									//   iskele akşam -> havuz
+	<spot id="s39"  alt="Havuz" url="images/arrow.png" depth="21" buttonMode="1"  pan="14" tilt="1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/iskele_aksam" rotation="180" 
+	onClick="pano.pan=-14,600; 
+	         pano.tilt=1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano09"	/>
+	
+										//   iskele akşam -> ana Giriş
+	<spot id="s40"  alt="Ana Giriş" url="images/arrow.png" depth="21" buttonMode="1"  pan="5" tilt="16" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/iskele_aksam" rotation="180" 
+	onClick="pano.pan=5,600; 
+	         pano.tilt=16,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano01"	/>
+	
+											//   iskele akşam -> bahce odalar 1
+	<spot id="s41"  alt="Bahçe Odalar 1" url="images/arrow.png" depth="21" buttonMode="1"  pan="33" tilt="8" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/iskele_aksam" rotation="180" 
+	onClick="pano.pan=33,600; 
+	         pano.tilt=8,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano04"	/>
+	
+												//   iskele akşam -> bahce odalar 2
+	<spot id="s42"  alt="Bahçe Odalar 2" url="images/arrow.png" depth="21" buttonMode="1"  pan="40" tilt="4" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/iskele_aksam" rotation="180" 
+	onClick="pano.pan=40,600; 
+	         pano.tilt=4,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano03"	/>
+	
+													//   iskele akşam -> restorant
+	<spot id="s43"  alt="Restaurant Teras" url="images/arrow.png" depth="21" buttonMode="1"  pan="-29" tilt="11" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/iskele_aksam" rotation="180" 
+	onClick="pano.pan=-29,600; 
+	         pano.tilt=11,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano05"	/>
+	
+														//   iskele akşam ->lobby bar teras
+	<spot id="s44"  alt="Lobby Bar Teras" url="images/arrow.png" depth="21" buttonMode="1"  pan="-12" tilt="13" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/iskele_aksam" rotation="180" 
+	onClick="pano.pan=-12,600; 
+	         pano.tilt=13,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano08"	/>
+	
+															// bahce 1 ->stadart oda
+	<spot id="s45"  alt="Standart oda" url="images/arrow.png" depth="21" buttonMode="1"  pan="128" tilt="1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/genel_gorunum2" rotation="-90" 
+	onClick="pano.pan=128,600; 
+	         pano.tilt=1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano20"	/>
+	
+	
+																// bahce 2 ->stadart oda
+	<spot id="s46"  alt="Standart oda" url="images/arrow.png" depth="21" buttonMode="1"  pan="-28" tilt="1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/genel_gorunum1" rotation="-90" 
+	onClick="pano.pan=-28,600; 
+	         pano.tilt=1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano20"	/>
+	
+																	// bahce 2 -> mini suit
+	<spot id="s47"  alt="Mini Suite" url="images/arrow.png" depth="21" buttonMode="1"  pan="35" tilt="1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/genel_gorunum1" rotation="90" 
+	onClick="pano.pan=35,600; 
+	         pano.tilt=1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano22"	/>
+	
+																		// standart  -> banyo
+	<spot id="s48"  alt="Banyo" url="images/arrow.png" depth="21" buttonMode="1"  pan="-130" tilt="-3" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/standart" rotation="90" 
+	onClick="pano.pan=-130,600; 
+	         pano.tilt=-3,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano21"	/>
+	
+																			// standart  -> banyo
+	<spot id="s49"  alt="Oda" url="images/arrow.png" depth="21" buttonMode="1"  pan="168" tilt="-3" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/banyo" rotation="0" 
+	onClick="pano.pan=168,600; 
+	         pano.tilt=-3,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano20"	/>
+	
+							// Lobby bar -> bufeler
+	<spot id="s50"  alt="Kapalı Restorant & Büfeler" url="images/arrow.png" depth="21" buttonMode="1"  pan="-33" tilt="-1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/lobby_bar" rotation="-90" 
+	onClick="pano.pan=-33,600; 
+	         pano.tilt=-1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano06"	/>
+	
+								// bufeler -> lobby bar
+	<spot id="s51"  alt="Lobby Bar" url="images/arrow.png" depth="21" buttonMode="1"  pan="-59" tilt="-4" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/bufeler" rotation="0" 
+	onClick="pano.pan=-59,600; 
+	         pano.tilt=-4,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano07"	/>
+	
+									// kapalı havuz -> bahce odalar 1
+	<spot id="s52"  alt="Bahçe - Odalar 1" url="images/arrow.png" depth="21" buttonMode="1"  pan="-78" tilt="-13" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/kapali_havuz" rotation="0" 
+	onClick="pano.pan=-78,600; 
+	         pano.tilt=-13,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano04"	/>
+	
+										// havuz_aksam -> vip home
+	<spot id="s53"  alt="Vip Home" url="images/arrow.png" depth="21" buttonMode="1"  pan="-101" tilt="6" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz_aksam" rotation="180" 
+	onClick="pano.pan=-101,600; 
+	         pano.tilt=6,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano25"	/>
+	
+											// havuz_aksam -> mini suite
+	<spot id="s54"  alt="Mini Suite" url="images/arrow.png" depth="21" buttonMode="1"  pan="-149" tilt="12" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz_aksam" rotation="180" 
+	onClick="pano.pan=-149,600; 
+	         pano.tilt=12,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano22"	/>
+
+											// havuz_aksam ->bahce odalar 1
+	<spot id="s55"  alt="Bahçe Odalar 1" url="images/arrow.png" depth="21" buttonMode="1"  pan="168" tilt="7" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz_aksam" rotation="90" 
+	onClick="pano.pan=168,600; 
+	         pano.tilt=7,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano04"	/>
+	
+												// havuz_aksam ->bahce odalar 2
+	<spot id="s56"  alt="Bahçe Odalar 2" url="images/arrow.png" depth="21" buttonMode="1"  pan="168" tilt="3" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz_aksam" rotation="90" 
+	onClick="pano.pan=168,600; 
+	         pano.tilt=3,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano03"	/>
+	
+													// havuz_aksam -> stndart oda
+	<spot id="s57"  alt="Standart Oda" url="images/arrow.png" depth="21" buttonMode="1"  pan="172" tilt="-1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz_aksam" rotation="90" 
+	onClick="pano.pan=172,600; 
+	         pano.tilt=-1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano20"	/>
+	
+														// havuz_aksam -> resepsiyon
+	<spot id="s58"  alt="Resepsiyon" url="images/arrow.png" depth="21" buttonMode="1"  pan="172" tilt="20" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz_aksam" rotation="180" 
+	onClick="pano.pan=172,600; 
+	         pano.tilt=20,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano02"	/>
+	
+															// havuz_aksam -> lobby bar teras
+	<spot id="s59"  alt="Lobby Bar Teras" url="images/arrow.png" depth="21" buttonMode="1"  pan="142" tilt="22" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz_aksam" rotation="180" 
+	onClick="pano.pan=142,600; 
+	         pano.tilt=22,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano08"	/>
+	
+															// havuz_aksam -> restaurant
+	<spot id="s60"  alt="Restaurant" url="images/arrow.png" depth="21" buttonMode="1"  pan="115" tilt="14" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz_aksam" rotation="180" 
+	onClick="pano.pan=115,600; 
+	         pano.tilt=14,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano05"	/>
+	
+																// havuz_aksam -> miniclub
+	<spot id="s61"  alt="Çocuk Klubü" url="images/arrow.png" depth="21" buttonMode="1"  pan="94" tilt="8" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/havuz_aksam" rotation="180" 
+	onClick="pano.pan=94,600; 
+	         pano.tilt=8,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano13"	/>
+	
+									//  restaurant -> büfeler
+	<spot id="s62"  alt="Lobby Bar Teras" url="images/arrow.png" depth="21" buttonMode="1"  pan="85" tilt="-1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/restaurant" rotation="0" 
+	onClick="pano.pan=85,600; 
+	         pano.tilt=-1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano08"	/>
+	
+	
+										//  resepsiyon -> 
+	<spot id="s63"  alt="Bahçe - Odalar 1" url="images/arrow.png" depth="21" buttonMode="1"  pan="57" tilt="-7" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/reception" rotation="180" 
+	onClick="pano.pan=57,600; 
+	         pano.tilt=-7,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano04"	/>
+	
+										//  resepsiyon ->
+	<spot id="s64"  alt="Bahçe - Odalar 2" url="images/arrow.png" depth="21" buttonMode="1"  pan="67" tilt="0" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/reception" rotation="180" 
+	onClick="pano.pan=67,600; 
+	         pano.tilt=0,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano03"	/>
+	
+								// reception ->
+	<spot id="s65"  alt="Lobby Bar" url="images/arrow.png" depth="21" buttonMode="1"  pan="155" tilt="1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/reception" rotation="-90" 
+	onClick="pano.pan=155,600; 
+	         pano.tilt=1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano07"	/>
+	
+									// reception -> 
+	<spot id="s66"  alt="Standart Oda" url="images/arrow.png" depth="21" buttonMode="1"  pan="-26" tilt="-1" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/reception" rotation="0" 
+	onClick="pano.pan=-26,600; 
+	         pano.tilt=-1,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano20"	/>
+	
+									// reception -> 
+	<spot id="s67"  alt="Banyo" url="images/arrow.png" depth="21" buttonMode="1"  pan="144" tilt="-34" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/mini_suite" rotation="180" 
+	onClick="pano.pan=144,600; 
+	         pano.tilt=-34,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano33"	/>
+	
+																				// mini suit  -> banyo
+	<spot id="s68"  alt="Oda" url="images/arrow.png" depth="21" buttonMode="1"  pan="168" tilt="-3" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/2banyo" rotation="0" 
+	onClick="pano.pan=168,600; 
+	         pano.tilt=-3,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano22"	/>
+	
+					// lobby bar  -> 
+	<spot id="s69"  alt="Resepsiyon" url="images/arrow.png" depth="21" buttonMode="1"  pan="-169" tilt="-4" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/lobby_bar" rotation="0" 
+	onClick="pano.pan=-169,600; 
+	         pano.tilt=-4,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano02"	/>
+	
+			// lobby bar ->
+	<spot id="s70"  alt="Bahçe - Odalar 1" url="images/arrow.png" depth="21" buttonMode="1"  pan="-27" tilt="4" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/Lobby_teras" rotation="180" 
+	onClick="pano.pan=-27,600; 
+	         pano.tilt=4,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano04"	/> 
+	
+				// lobby bar ->
+	<spot id="s71"  alt="Bahçe - Odalar 2" url="images/arrow.png" depth="21" buttonMode="1"  pan="-39" tilt="-6" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/Lobby_teras" rotation="180" 
+	onClick="pano.pan=-39,600; 
+	         pano.tilt=-6,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano03"	/> 
+	
+					// lobby bar ->
+	<spot id="s72"  alt="Restaurant Teras" url="images/arrow.png" depth="21" buttonMode="1"  pan="179" tilt="-2" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/Lobby_teras" rotation="180" 
+	onClick="pano.pan=179,600; 
+	         pano.tilt=-2,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano05"	/> 
+
+
+					// lobby bar ->
+	<spot id="s73"  alt="Balkon & Bahçe" url="images/arrow.png" depth="21" buttonMode="1"  pan="16" tilt="-3" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/vip_home_salon" rotation="0" 
+	onClick="pano.pan=16,600; 
+	         pano.tilt=-3,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano23"	/> 
+	
+					// lobby bar ->
+	<spot id="s74"  alt="Tekne Görünüm 2" url="images/arrow.png" depth="21" buttonMode="1"  pan="-102" tilt="0" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/liman" rotation="0" 
+	onClick="pano.pan=-102,600; 
+	         pano.tilt=0,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano31"	/> 
+	
+						// lobby bar ->
+	<spot id="s75"  alt="Tekne Görünüm 1" url="images/arrow.png" depth="21" buttonMode="1"  pan="-171" tilt="-2" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/balkon" rotation="180" 
+	onClick="pano.pan=-171,600; 
+	         pano.tilt=-2,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano30"	/> 
+	
+							// lobby bar ->
+	<spot id="s76"  alt="Tekne İçi" url="images/arrow.png" depth="21" buttonMode="1"  pan="-141" tilt="-14" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/balkon" rotation="180" 
+	onClick="pano.pan=-141,600; 
+	         pano.tilt=-14,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano32"	/> 
+	
+						// lobby bar ->
+	<spot id="s77"  alt="Tekne Görünüm 2" url="images/arrow.png" depth="21" buttonMode="1"  pan="-143" tilt="0" depth="20"  tintColor="#fbc100" tint="0" onOver="tint=1,200" onOut="tint=0,200" scaleable="0" linked="360/tekne" rotation="0" 
+	onClick="pano.pan=-143,600; 
+	         pano.tilt=0,600,,zoom" 
+	zoom="pano.zoom=1.5,900,,loadpano31"	/> 
+	
+	
+	
+
+
+
+
+
+<!-- NAVIGATION --->	
+  
+ <!-- 
+  <spot id="info1"  url="images/info.png" static="1" salign="BC" depth="25" staticX="-205" staticY="-35" 
+	glowColor="#ffffff"
+	onOver="glow=5"
+	onOut="glow=0;"
+	onclick="hideTXT()"
+	/>
+	
+	<spot id="info2" url="images/info.png" static="1" salign="BC" depth="25" staticX="-205" staticY="-35" 
+	glowColor="#ffffff"
+	onOver="glow=5"
+	onOut="glow=0;"
+	onclick="showTXT()"
+	/> 
+
+
+
+	<spot id="listbtn1" static="1" salign="BC" staticX="-160" staticY="-35" scale="1" depth="25" url="images/list.png" blockMouse="1"  
+	glowColor="#ffffff"
+	onOver="glow=5"
+	onOut="glow=0;"
+	onclick="hideList" 
+
+	/>
+	
+	<spot id="listbtn2"  static="1" salign="BC" staticX="-160" staticY="-35" scale="1" depth="26" url="images/list.png" blockMouse="1" 
+	
+	glowColor="#ffffff"
+	onOver="glow=5"
+	onOut="glow=0;"
+	onclick="showList" 
+
+	/>	-->
+	
+	<spot id="left"  static="1" salign="BC" staticX="-115" staticY="-35" scale="1" depth="25" url="images/left.png" blockMouse="1" 
+	glowColor="#ffffff"
+	onOver="glow=5"
+	onOut="glow=0;" 
+	onPress="pano.panKey=-2,500"
+	onRelease="pano.panKey=0"
+	/>
+	<spot id="right"  static="1" salign="BC" staticX="-70" staticY="-35" scale="1" depth="25" url="images/right.png"  blockMouse="1"
+	glowColor="#ffffff"
+	onOver="glow=5"
+	onOut="glow=0;" 
+	onPress="pano.panKey=2,500"
+	onRelease="pano.panKey=0"
+	/>
+
+	<spot id="down"  static="1" salign="BC" staticX="-25" staticY="-35" scale="1" depth="25" url="images/down.png" blockMouse="1"
+	glowColor="#ffffff"
+	onOver="glow=5"
+	onOut="glow=0;" 
+	onPress="pano.tiltKey=-2,500"
+	onRelease="pano.tiltKey=0"
+	/>
+
+	<spot id="up" static="1" salign="BC" staticX="20" staticY="-35" scale="1" depth="25" url="images/up.png" blockMouse="1"
+	glowColor="#ffffff"
+	onOver="glow=5"
+	onOut="glow=0;" 
+	onPress="pano.tiltKey=2,500"
+	onRelease="pano.tiltKey=0"
+	/>
+
+	<spot id="zoomOut"  static="1" salign="BC" staticX="65" staticY="-35" scale="1" depth="25" url="images/out.png" blockMouse="1"
+	glowColor="#ffffff"
+	onOver="glow=5"
+	onOut="glow=0;" 
+	onPress="pano.zoomKey=-2,500"
+	onRelease="pano.zoomKey=0"
+	/>
+
+	<spot id="zoomIn"  static="1" salign="BC" staticX="110" staticY="-35" scale="1" depth="25" url="images/in.png" blockMouse="1"
+	glowColor="#ffffff"
+	onOver="glow=5"
+	onOut="glow=0;" 
+	onPress="pano.zoomKey=2,500"
+	onRelease="pano.zoomKey=0"
+	/>
+
+	<spot id="pause"  static="1" salign="BC" staticX="155" staticY="-35" visible="1" scale="1" depth="25" url="images/pause.png" blockMouse="1"
+	glowColor="#ffffff" 
+	onOver="glow=5"
+	onOut="glow=0;" 
+	onClick="stopAR()"
+	/>
+	
+	<spot id="play" static="1" salign="BC" staticX="155" staticY="-35" visible="1" scale="1" depth="25" url="images/play.png" blockMouse="1"
+	glowColor="#ffffff" 
+	onOver="glow=5"
+	onOut="glow=0;" 
+	onClick="startAR()"
+	/>
+
+	<spot id="full1"  static="1" salign="BC" staticX="200" staticY="-35" visible="1" scale="1" depth="25" url="images/full.png" glowColor="#ffffff"    onClick="fullscreen(-);full2.visible=1" 
+	onOver="glow=5;"
+	onOut="glow=0;" 
+	/>
+
+	<spot id="full2"  static="1" salign="BC" staticX="200" staticY="-35" visible="0" scale="1" depth="25" url="images/full_out.png" glowColor="#ffffff" onClick="fullscreen(-);full.visible=1;full2.visible=0"
+	onOver="glow=5;"
+	onOut="glow=0;" 
+	/>
+	
+	
+	</global>
+</hotspots>
+
+</panorama>

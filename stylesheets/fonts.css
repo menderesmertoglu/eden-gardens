@@ -1,0 +1,19 @@
+/* Font-Face */
+@font-face {
+font-family: 'Proxima';
+	font-weight: normal;
+  src: url("fonts/ProximaNova-Reg-webfont7adf.html?1307578394");
+	src: url("fonts/ProximaNova-Reg-webfont86d7.html?iefix") format('eot'),url("fonts/ProximaNova-Reg-webfont7adf-2.html?1307578394") format('woff'),url("fonts/ProximaNova-Reg-webfont7adf-3.html?1307578394") format('truetype'),url("fonts/ProximaNova-Reg-webfont.svg#webfont2rpW2ohz") format('svg');
+}
+@font-face {
+	font-family: 'Proxima';
+	font-weight: 300;
+	src: url("fonts/ProximaNova-Light-webfont7adf.html?1307578394");
+	src: url("fonts/ProximaNova-Light-webfont86d7.html?iefix") format('eot'),url("fonts/ProximaNova-Light-webfont7adf-2.html?1307578394") format('woff'),url("fonts/ProximaNova-Light-webfont7adf-3.html?1307578394") format('truetype'),url("fonts/ProximaNova-Light-webfont.svg#webfont2rpW2ohz") format('svg');
+}
+@font-face {
+	font-family: 'Proxima';
+	font-weight: bold;
+	src: url("fonts/ProximaNova-Bold-webfont7adf.html?1307578394");
+	src: url("fonts/ProximaNova-Bold-webfont86d7.html?iefix") format('eot'),url("fonts/ProximaNova-Bold-webfont7adf-2.html?1307578394") format('woff'),url("fonts/ProximaNova-Bold-webfont7adf-3.html?1307578394") format('truetype'),url("fonts/ProximaNova-Bold-webfont.svg#webfont2rpW2ohz") format('svg');
+}
