@@ -2,15 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Untitled Document</title>
+<title>Assos Eden Gardens Hotel</title>
 <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="stylesheets/menu.css" type="text/css" />
 
-<link rel="stylesheet" href="stylesheets/lightbox.css" />
-<script src="js/jquery-1.7.2.min.js"></script>
-<script src="js/lightbox.js"></script>
-<script src="js/prototype.js" type="text/javascript"></script>
-	<script src="js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/jquery.lightbox-0.5.css" /> 
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('#gallery a').lightBox();
+    });
+    </script>
   <!--[if IE 7]>
             <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
             <link rel="stylesheet" href="stylesheet/ie7.css" />
@@ -228,7 +231,7 @@
 
 <div class="main_content2_left ">
 <!--room_select start-->
-<div class="room_select left"><a href="">Assos'a nasıl gidilir?</a><a href="">Assos Otellerimiz</a><a href="">Assos'ta tatil</a></div>
+<div class="room_select left"><a href="assosa-nasil-gidilir.html">Assos'a nasıl gidilir?</a><a href="assos-otelleri.html">Assos Otellerimiz</a><a href="assos-tatili.html">Assos'ta tatil</a></div>
 <!--room select end-->
 <h2>Assos'un tarihçesi</h2>
 <p>Çanakkale nin 87 Km. güneyinde bulunan Ayvacık İlçesine Bağlı Assos (Şimdiki Adıyla ; Behramkale) nin tarihi M.Ö 2000 yıllarına dayanmaktadır. Assos kelimesinin kökeni Pedasostur.Behram sözcüğünün kökeni ise Assos ta görev almış Bizans komutanlarından Mahramin isminin kullanılan değişmiş halidir. </p>
@@ -244,13 +247,13 @@ Assos tarihte sırasıyla ;Lidyalıların,Perslerin,İskenderin,Roma  ve Bizans 
 </div><!--main_content2_left end-->
 <!--images start-->
 
-<div class="gallery_s left">
+<div class="gallery_s left" id="gallery">
         <ul id="gallery_n" >
-          <li><a href="images/gallery/stnd1_large.jpg" rel="lightbox[roadtrip]"><img src="images/gallery/stnd1_small.jpg" width="150" height="100" alt="" /></a></li>
-          <li><a href="images/gallery/stnd2_large.jpg" rel="lightbox[roadtrip]" class="galleryimg1"><img src="images/gallery/stnd2_small.jpg" width="150" height="100" alt="" /></a></li>
-          <li><a href="images/gallery/stnd3_large.jpg" rel="lightbox[roadtrip]" class="galleryimg1"><img src="images/gallery/stnd3_small.jpg" width="150" height="100" alt="" /></a></li>
-          <li><a href="images/gallery/stnd4_large.jpg" rel="lightbox[roadtrip]" class="galleryimg1"><img src="images/gallery/stnd4_small.jpg" width="150" height="100" alt="" /></a></li>
-          <li><a href="images/gallery/stnd5_large.jpg" rel="lightbox[roadtrip]" class="galleryimg1"><img src="images/gallery/stnd5_small.jpg" width="150" height="100" alt="" /></a></li>
+          <li><a href="images/gallery/assos1.jpg" rel="lightbox[roadtrip]"><img src="images/gallery/assos1.jpg" width="150" height="100" alt="" /></a></li>
+          <li><a href="images/gallery/assos2.jpg" rel="lightbox[roadtrip]" class="galleryimg1"><img src="images/gallery/assos2.jpg" width="150" height="100" alt="" /></a></li>
+          <li><a href="images/gallery/assos3.jpg" rel="lightbox[roadtrip]" class="galleryimg1"><img src="images/gallery/assos3.jpg" width="150" height="100" alt="" /></a></li>
+          <li><a href="images/gallery/assos4.jpg" rel="lightbox[roadtrip]" class="galleryimg1"><img src="images/gallery/assos4.jpg" width="150" height="100" alt="" /></a></li>
+          <li><a href="images/gallery/assos5.jpg" rel="lightbox[roadtrip]" class="galleryimg1"><img src="images/gallery/assos5.jpg" width="150" height="100" alt="" /></a></li>
     
       
       </ul>
@@ -261,7 +264,6 @@ Assos tarihte sırasıyla ;Lidyalıların,Perslerin,İskenderin,Roma  ve Bizans 
 
 </div>
 <!--images end-->
-
 </div>
 </div><!--main_content end-->
 <div class="standart_width">
@@ -269,8 +271,8 @@ Assos tarihte sırasıyla ;Lidyalıların,Perslerin,İskenderin,Roma  ve Bizans 
 <!--res area start-->
 
 <div class="res_area left">
-<div class="ball left"><a href="" class="sanaltur">sanal tur</a></div> 
-<div class="ball left"><a href="" class="onlinerez">sanal tur</a></div> 
+<div class="ball left"><a href="assos-sanal-gezinti.html" class="sanaltur">sanal tur</a></div> 
+<div class="ball left"><a href="https://www.assosedengroup.com/OnlineRez/v2/reservation.asp?dbadi=EDENGARDENS&id=2&hotelname=Assos%20Eden%20Gardens%20Hotel" class="onlinerez">sanal tur</a></div> 
 <div class="ball left"><a href="" class="onlinedestek">sanal tur</a></div> 
 
 
@@ -282,8 +284,8 @@ Assos tarihte sırasıyla ;Lidyalıların,Perslerin,İskenderin,Roma  ve Bizans 
 <div class="other_hotels left standart_width">
 <div class="hotels left column1_4 gardens_logo" onclick="location.href='http://www.assosedengardens.com'"></div>
 <div class="hotels left column2_4 beach_logo" onclick="location.href='http://www.assosedenbeach.com'"></div>
-<div class="hotels left column3_4 spa_logo" onclick="location.href='http://www.assosnazlihanspahotel.com'"></div>
-<div class="hotels left column4_4 nazlihan_logo" onclick="location.href='http://www.assosnazlihan.com'"></div>
+<div class="hotels left column3_4 spa_logo" onclick="location.href='http://www.assosnazlihan.com'"></div>
+<div class="hotels left column4_4 nazlihan_logo" onclick="location.href='http://www.assosnazlihanspahotel.com'"></div>
 
 
 
@@ -303,8 +305,8 @@ Assos tarihte sırasıyla ;Lidyalıların,Perslerin,İskenderin,Roma  ve Bizans 
 <div class="footer left">
 <!--footer_top start-->
 <div class="footer_top  standart_width">
-<div class="part1_3 left"><h6>Assos Eden Gardens Hotel</h6><p>Assos Behramkale Ayvacık<br>
-				Sahil yolu eden beach</p><p>T <span>(0226)4440150</span><br>
+<div class="part1_3 left"><h6>Assos Eden Gardens Hotel</h6><p>Assos-Küçükkuyu Sahilyolu Kozlualtı<br>
+Ayvacık / ÇANAKKALE </p><p>T <span>(0286) 764 02 90 </span><br>
 				E <a href="mailto:info@assosedengardens.com">info@assosedengardens.com</a></p></div>
 <div class="part2_3 left"><h6>Online Katalog</h6><p><a href="assosedengroup_katalog.pdf" class="catalog">Otelimizin .pdf formatında kataloğunu indirebilirsiniz.</a></p></div>
 <div class="part3_3 right"><h6>Maillist</h6><p>Yeniliklerden Haberdar Olun</p>

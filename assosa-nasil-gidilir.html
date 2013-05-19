@@ -2,22 +2,50 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Untitled Document</title>
+<title>Assos Eden Gardens Hotel</title>
 <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="stylesheets/menu.css" type="text/css" />
 
 <link rel="stylesheet" href="stylesheets/lightbox.css" />
  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
-    <script src="js/organictabs.jquery.js"></script>
     <script>
-        $(function() {
-    
-            $("#example-one").organicTabs();
-            
-           
-    
-        });
-    </script>
+$(document).ready(function() {
+ 
+	//ACCORDION BUTTON ACTION	
+	$('div.accordionButton').click(function() {
+		$('div.accordionContent').slideUp('normal');	
+		$(this).next().slideDown('normal');
+	});
+ 
+	//HIDE THE DIVS ON PAGE LOAD	
+	$("div.accordionContent").hide();
+ 
+});
+</script>
+<style>
+#slide {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+ 
+.accordionButton {	
+	width: 960px;
+	float: left;
+	background: #fff;
+	border-bottom: 1px solid #FFFFFF;
+	cursor: pointer;
+	text-decoration:underline;
+	}
+ 
+.accordionContent {	
+	width: 960px;
+	float: left;
+	background: #fff;
+	display: none;
+}
+
+</style>
   <!--[if IE 7]>
             <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
             <link rel="stylesheet" href="stylesheet/ie7.css" />
@@ -235,11 +263,40 @@
 
 <div class="main_content2_left ">
 <!--room_select start-->
-<div class="room_select left"><a href="">Assos Tarihçe</a><a href="">Assos Otellerimiz</a><a href="">Assos'ta tatil</a></div>
+<div class="room_select left"><a href="assos-tarihcesi.html">Assos Tarihçe</a><a href="assos-otelleri.html">Assos Otellerimiz</a><a href="assos-tatili.html">Assos'ta tatil</a></div>
 <!--room select end-->
 <h2>Assos'a nasıl gidilir?</h2>
 <p>Türkiye Haritasını genel olarak gözümüzün önüne getirecek olursak ASSOS , Marmara Bölgesi ile Ege Bölgesi 'nin ayrıldığı noktaya en yakın olan Edremit Körfezi'nin başlangıcındadır. Çanakkale ve İzmir'in arasında yer alan ASSOS, çevresinde bilinen ve misafirler tarafından gerek tarihi açıdan gerekse doğası ve temiz havası açısından sıkça ziyaret ettikleri Ayvalık , Truva , Küçükkuyu , Altınoluk, Akçay , Ören, Kaz dağları gibi popüler olan yerlere oldukça yakındır.</p>
+<div id="slide">
+		<div class="accordionButton">ARABASIYLA TATİLE GİDECEKLER İÇİN YOL TARİFLERİ ; </div>
+		<div class="accordionContent" style="display: none;"><b>İstanbul – Bursa Güzergahı ;</b><br>
+        <p>
+İstanbul,Bursa güzergahını kullanarak mı Assosa gitmek isterseniz ;Yol yaklaşık 310 km civarındadır.İstanbuldan,Yalova,Bursa,Balıkesir,Edremit ve Altınoluk üzerinden Assos a ulaşabilirsiniz.</p>
+<b>Edremit Küçükkuyu üzerinden geliyorsak  ;</b><br>
+<p>
+ Küçükkuyu  merkezini geçtikten 2 km kadar sonra göreceğimiz ASSOS –BEHRAMKALE  tabelasından sola döndüğümüzde 15 km sonra Assos Eden Gardens Hotel 'i görürüz oteli  geçtikten 900 mt kadar sonra sağ tarafta geniş asfalt Ayvacık yolunu sol tarafta da Kadırga Koyu ve BEHRAMKALE 'ye devam eden sahilyolunu görğümüz yol çatalına geliriz. Bu çatalda eğer direk Assos Antik Liman 'a                     ( Assos Nazlıhan Hotel )  ya da Behramkale'ye gidiyorsak sağ taraftaki geniş  yolun tercih edilmesi daha rahat olacaktır  bu yolu  kullanarak BEHRAM ayrımına kadar gelip bu ayrımdan sağa dönerek 6 km sonra BEHRAMKALE 'ye , Behram'dan 2 km sonra ise Assos Antik Liman 'a ulaşabiliriz .  Bu ulaşım için hazırlamış olduğumuz detaylı ulaşım krokisini inceleyebilirsiniz.</p>
+
+<b>İstanbul-Tekirdağ Güzergahı ;</b><br>
+<p>
+İstanbul – Tekirdağ üzerinden Assos a nasıl ulaşabiliriz diyenlere ; İstanbuldan yola çıkıyoruz Tekirdağ yolunu takiben Geliboluya ulaşıyoruz oradan Çanakkale Boğazını geçeceğimiz Arabalı Vapuru bekliyoruz ve Çanakkaleye geçiyoruz.Çanakkale – İzmir yolunu takiben de Assos a ulaşıyoruz.Bu seçilen güzergah yaklaşık 7 saat sürecektir</p>
+<b>İstanbul – Bandırma Yolu (Feribotlu ulaşım) ;</b><br>
+<p>
+Fazla araba kullanmak istemeyen tatilciler için İstanbul Yenikapıdan hergün karşılıklı olarak belli saatlerde düzenlenen Hızlı Feribot a biniyoruz ve yaklaşık 2 saat süren Konforlu seferle Bandırmaya ulaşıyoruz.Bandırmadan sonra Balıkesire,oradan Edremiti takiben Altınoluka ve derken Assos a ulaşıyoruz.</p>
+<b>Ankara dan ;</b><br>
+<p>
+Ankaradan mı gideceksiniz,işte sizin için de en uygun yol güzergahı; bu mesafe yaklaşık olarak 670 km civarındadır.Önce Ankaradan Eskişehire ulaşıyorsunuz,oradan Bursaya,Balıkesiri takiben Edremit,Altınoluk,Küçükkuyu üzerinden Assos a geldiniz bile.Bu güzergahta yaklaşık 12 saat sürecektir.</p>
+<b>İzmir den ;</b><br>
+<p>
+İzmir – Assos arası yaklaşık 290 Km dir.İzmirden çıkıp önce Aliağaya,Aliağayı takibende Ayvalık ve sırasıyla Edremit,Akçay,Altınoluk ve Küçükkuyuya geldikten 25 Km sonra Assos a ulaşıyorsunuz.Yol yaklaşık olarak 2.5 saat sürmektedir.</p>
+</div>
+		<div class="accordionButton">OTOBÜSÜ TERCİH EDENLERE ;</div>
+		<div class="accordionContent" style="display: none;"><p>Assos a Otobüs ile gelmek isteyenleri duyar gibiyiz,işte sizler içinde bu güzel tatil beldesine  ulaşım hizmeti veren birçok seçkin firma var ; Ancak öncelikle Otobüs biletlerimizi biniş noktamızdan alırken hangi noktada inmemiz gerektiğine dikkat etmek gerekiyor.Otobüs tercihimiz de iniş noktamız AYVACIK veya KÜÇÜKKUYU olmalıdır.Buralarda inecek olan tatilcilerimiz için Assos a yaz dönemlerinde sık olmak kaydıyle karşılıklı minibüs seferleri yapılmaktadır.Ancak Otobüsten indikten sonra Yılın her ayında Otogardan Taksi ile de Assos a  ulaşım sağlanabilmektedir.</p></div>
+		<div class="accordionButton">UÇAKTAN VAZGEÇMEM DİYENLERE ;</div>
+		<div class="accordionContent" style="display: none;"><p>Artık ASSOS 'a uçakla gelebilmemiz mümkün . Bölgeye en yakın havaalanları olan Çanakkale ve Edremit Havaalanlarına dönemsel olarak İstanbul – Çanakkale ve İstanbul – Edremit seferleri yapılmaktadır.  Çanakkale veya Ederemit'e uçakla gelmemiz durumunda ya buralardan araba kiralamamız ya da taksilerle anlaşıp Assos'a ulaşmamız gerekmektedir.Aşağıda bu uçak  seferlerini yapan havayolu firmalarımızın iletişim bilgilerini bulabiliriz.</p> </div>
+		
+	</div>
 </div><!--main_content2_left end-->
+<!--ulasim area start--><iframe src="ulasim.asp"  width="940" height="250"></iframe><!--ulasim area finish-->
 <!--slide start-->
 <div class="slide_wrap left">
 
@@ -253,8 +310,8 @@
 <!--res area start-->
 
 <div class="res_area left">
-<div class="ball left"><a href="" class="sanaltur">sanal tur</a></div> 
-<div class="ball left"><a href="" class="onlinerez">sanal tur</a></div> 
+<div class="ball left"><a href="assos-sanal-gezinti.html" class="sanaltur">sanal tur</a></div> 
+<div class="ball left"><a href="https://www.assosedengroup.com/OnlineRez/v2/reservation.asp?dbadi=EDENGARDENS&id=2&hotelname=Assos%20Eden%20Gardens%20Hotel" class="onlinerez">sanal tur</a></div> 
 <div class="ball left"><a href="" class="onlinedestek">sanal tur</a></div> 
 
 
@@ -266,8 +323,8 @@
 <div class="other_hotels left standart_width">
 <div class="hotels left column1_4 gardens_logo" onclick="location.href='http://www.assosedengardens.com'"></div>
 <div class="hotels left column2_4 beach_logo" onclick="location.href='http://www.assosedenbeach.com'"></div>
-<div class="hotels left column3_4 spa_logo" onclick="location.href='http://www.assosnazlihanspahotel.com'"></div>
-<div class="hotels left column4_4 nazlihan_logo" onclick="location.href='http://www.assosnazlihan.com'"></div>
+<div class="hotels left column3_4 spa_logo" onclick="location.href='http://www.assosnazlihan.com'"></div>
+<div class="hotels left column4_4 nazlihan_logo" onclick="location.href='http://www.assosnazlihanspahotel.com'"></div>
 
 
 
@@ -287,8 +344,8 @@
 <div class="footer left">
 <!--footer_top start-->
 <div class="footer_top  standart_width">
-<div class="part1_3 left"><h6>Assos Eden Gardens Hotel</h6><p>Assos Behramkale Ayvacık<br>
-				Sahil yolu eden beach</p><p>T <span>(0226)4440150</span><br>
+<div class="part1_3 left"><h6>Assos Eden Gardens Hotel</h6><p>Assos-Küçükkuyu Sahilyolu Kozlualtı<br>
+Ayvacık / ÇANAKKALE </p><p>T <span>(0286) 764 02 90 </span><br>
 				E <a href="mailto:info@assosedengardens.com">info@assosedengardens.com</a></p></div>
 <div class="part2_3 left"><h6>Online Katalog</h6><p><a href="assosedengroup_katalog.pdf" class="catalog">Otelimizin .pdf formatında kataloğunu indirebilirsiniz.</a></p></div>
 <div class="part3_3 right"><h6>Maillist</h6><p>Yeniliklerden Haberdar Olun</p>

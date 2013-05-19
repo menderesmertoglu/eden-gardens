@@ -1,3 +1,11 @@
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Assos Eden Gardens Hotel</title>
+
+<style type="text/css">
 @charset "utf-8";
 @font-face {
     font-family: 'DroidSansRegular';
@@ -38,7 +46,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 html { font-size: 62.5%; }
 
-body { background: white; font-family:'DroidSansRegular', Arial, sans-serif; font-size: 14px; font-size: 1.4rem; line-height: 1; color: #222222; position: relative; -webkit-font-smoothing: antialiased;background-image:url(../images/noise.png); }
+body { background: white; font-family:'DroidSansRegular', Arial, sans-serif; font-size: 14px; font-size: 1.4rem; line-height: 1; color: #222222; position: relative; -webkit-font-smoothing: antialiased; }
 
 /* Links ---------------------- */
 a { color: #00a3e2; text-decoration: none; line-height: inherit; }
@@ -152,7 +160,7 @@ code { font-weight: bold; background: #ffff99; }
 
 /*-----------------------------*/
 /*---duyurulr---*/
-.notice{border-top:1px solid #d0d0d0;height:120px;padding-top:20px;display:none;}
+.notice{border-top:1px solid #d0d0d0;height:120px;padding-top:20px;}
 .notice_text{padding:0 90px;background: url(../images/duyuru_icon.png)  no-repeat 35px 0;font-size:26px ;font-weight:300;}
 .notice_text p{margin:0 0 10px;text-align:center;font-size:20px !important;}
 
@@ -211,7 +219,7 @@ url(../images/hotel-logos-sprite.png) no-repeat -420px 0px;}
 /*---------*/
 
 /*---tweet---*/
-.tweet{border-top:1px solid #d0d0d0;height:120px;padding-top:20px;display:none;}
+.tweet{border-top:1px solid #d0d0d0;height:120px;padding-top:20px;}
 .text{padding:0 90px;background:url(../images/bird_icon.png) no-repeat 35px 0;font-size:26px;font-weight:300;}
 .text p{margin:0 0 10px;text-align:center;}
 .author{font-size:20px;}
@@ -223,7 +231,7 @@ url(../images/hotel-logos-sprite.png) no-repeat -420px 0px;}
 .part1_3{width:400px;height:120px;}
 .part2_3{width:220px;height:120px;}
 .part3_3{width:280px;height:120px;}
-.part1_3 p{margin-right:30px;float:left;font-size:11px;}
+.part1_3 p{margin-right:40px;float:left;font-size:11px;}
 .part3_3 p{font-size:11px;float:left;}
 .part3_3 h6{width:170px;float:left;}
 .part2_3 p{margin-right:40px;float:left;font-size:11px;}
@@ -280,11 +288,7 @@ border:none;}
 .main_content2_left{float:left;width:940px;height: auto;}
 .
 .white{background:#FFFFFF;}
-.video{width:940px;height:337px;border-top:1px solid #999;margin-top:10px;}
-.video p{font-size: 12px;
-color: #9cc42f;
-width: 940px;
-text-align: center;}
+.video{width:940px;height:300px;border-top:1px solid #999;margin-top:10px;}
 .map_info{padding-left:40px;width:300px;height:36px;background:url(../images/file.png) no-repeat 0 0;padding-top:10px;margin-left:380px;}
 .map_info a{font-size:16px;margin-top:10px !important;}
 /*---nerede.html---*/
@@ -412,4 +416,60 @@ cursor: pointer;
 border: none;
 }
 .ulasimnew{background:#FFF;margin-bottom:20px;}
-.blueflag{float:right;width:120px;height:80px;margin:0 !important;}
+
+</style>
+</head>
+
+<body>
+<!-- div ulasim start-->
+<div class="ulasimnew">
+<%
+' EXCEL dosyasýnýn ilk satýrý alan adlarýný gösterir... Bu örnekte alanlar AD, SOYAD, TEL...
+
+abdulkadir = "DBQ=" & Server.MapPath("ulasim.xls") & "; DRIVER={Microsoft Excel Driver (*.xls)};"
+
+Set abdul = Server.CreateObject("ADODB.Connection")
+Set kocer = Server.CreateObject("ADODB.Recordset")
+abdul.open abdulkadir
+
+
+sql="select * from [Sayfa1$]"
+kocer.Open sql, abdul, 1,3
+%>
+<table border="1" width="91%" id="table1" bordercolor="#777777" cellspacing="0" cellpadding="0" style="border-collapse: collapse;margin-top:20px;" align="center">
+	<tr style="text-align:center;font-weight:bold;height:30px;"><td colspan="4">ULAŞIM ARAÇLARI</td></tr>
+    <tr>
+    
+		<td style="text-align:center;height:30px;"><b>ULAŞIM ARACI</b></td>
+		<td style="text-align:center;height:30px;"><b>FİRMA</b></td>
+		<td style="text-align:center;height:30px;"><b>WEB SİTESİ</b></td>
+		<td style="text-align:center;height:30px;"><b>TELEFON</b></td>
+	</tr>
+
+<%
+do while not kocer.eof
+%>
+
+	<tr>
+    <td style="text-align:center;"><%=kocer("A1")%>&nbsp;</td>
+		<td style="text-align:center;"><%=kocer("A2")%>&nbsp;</td>
+		<td style="text-align:center;"><a href="<%=kocer("A3")%>"><%=kocer("A3")%>&nbsp;</a></td>
+		<td style="text-align:center;"><%=kocer("A4")%>&nbsp;</td>
+		
+	</tr>
+
+<%    
+kocer.movenext
+loop
+
+
+kocer.close
+Set kocer = nothing
+abdul.close
+Set abdul = nothing
+%>
+</table>
+
+</div><!-- div ulasim end-->
+</body>
+</html>
