@@ -164,10 +164,10 @@
 <![endif]-->
 
 </li>
-<li><a class="hide" href="oda-otel-fiyatlari.html">Fiyatlar</a>
+<li><a class="hide" href="assos-otel-fiyatlari.asp">Fiyatlar</a>
 
 <!--[if lte IE 6]>
-<a href="oda-otel-fiyatlari.html">Fiyatlar
+<a href="assos-otel-fiyatlari.asp">Fiyatlar
 <table><tr><td>
 <![endif]-->
 
@@ -262,17 +262,17 @@ Harbiye / İstanbul<br />
 <h5>İletişim Formu</h5>
 <p>
 Her türlü soru ve önerileriniz için lütfen bizimle iletişime geçiniz.</p>
-<form class="cmxform" id="commentForm" action="form.asp?send=1" method="post" novalidate="novalidate">
+<form class="cmxform" id="commentForm" action="mailcdo.asp"  method="post" novalidate="novalidate">
 	
 	<fieldset>
    
    <p>
      <label for="cname">İsim Soyisim:</label>
-     <input id="cname" name="FromName" size="80" class="required form_width" minlength="2">
+     <input id="cname" name="Name" size="80" class="required form_width" minlength="2">
    </p>
    <p>
      <label for="cemail">E-Mail</label>
-     <input id="cemail" name="From" size="80" class="required email form_width">
+     <input id="cemail" name="Email" size="80" class="required email form_width">
    </p>
    <p>
      <label for="curl">Konu</label>
@@ -280,7 +280,7 @@ Her türlü soru ve önerileriniz için lütfen bizimle iletişime geçiniz.</p>
    </p>
    <p>
      <label for="ccomment">Mesaj</label>
-     <textarea id="ccomment" name="Message" cols="80" rows="5" class="required form_width"></textarea>
+     <textarea id="ccomment" name="message" cols="80" rows="5" class="required form_width"></textarea>
    </p>
    <p>
      <input class="submit submit-button" type="submit" value="Gönder">

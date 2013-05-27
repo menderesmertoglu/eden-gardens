@@ -1,3 +1,4 @@
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,8 +6,7 @@
 <title>Assos Eden Gardens Hotel</title>
 <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="stylesheets/menu.css" type="text/css" />
-<link rel="stylesheet" href="stylesheets/basic-jquery-slider.css" type="text/css" />
-
+<link rel="stylesheet" href="stylesheets/menu.css" type="text/css" /
   <!--[if IE 7]>
             <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
             <link rel="stylesheet" href="stylesheet/ie7.css" />
@@ -19,7 +19,42 @@
     <!--[if IE 9]>
             <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
         <![endif]-->
-        
+        <script src="js/jquery-1.3.1.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+	//move the image in pixel
+	var move = -15;
+	
+	//zoom percentage, 1.2 =120%
+	var zoom = 1.2;
+
+	//On mouse over those thumbnail
+	$('.item').hover(function() {
+		
+		//Set the width and height according to the zoom percentage
+		width = $('.item').width() * zoom;
+		height = $('.item').height() * zoom;
+		
+		//Move and zoom the image
+		$(this).find('img').stop(false,true).animate({'width':width, 'height':height, 'top':move, 'left':move}, {duration:200});
+		
+		//Display the caption
+		$(this).find('div.caption').stop(false,true).fadeIn(200);
+	},
+	function() {
+		//Reset the image
+		$(this).find('img').stop(false,true).animate({'width':$('.item').width(), 'height':$('.item').height(), 'top':'0', 'left':'0'}, {duration:100});	
+
+		//Hide the caption
+		$(this).find('div.caption').stop(false,true).fadeOut(200);
+	});
+
+});
+
+</script>
 
 </head>
 
@@ -39,6 +74,7 @@
 
 <!--header_bottom start-->
 <div class="header_bottom left">
+
 <!--menu start-->
 <div id="menu" class="left">
 <div class="menu">
@@ -202,64 +238,130 @@
 
 
 </div>
-<!--menu end-->
-
-
-
-</div>
+<!--menu end--></div>
 <!--header_bottom end-->
 </div><!--header_container end-->
 </div> 
 <!--header end-->
 <div class="standart_width">
 <!--slider start-->
-<div class="slider left " >
-
-<div id="banner">
-        <!-- start Basic Jquery Slider -->
-        <ul class="bjqs">
-          <li><img src="images/demo1.jpg" title=""></li>
-          <li><img src="images/demo7.jpg" title=""></li>
-          <li><img src="images/demo2.jpg" title=""></li>
-          <li><img src="images/demo3.jpg" title=""></li>
-          <li><img src="images/demo4.jpg" title=""></li>
-          <li><img src="images/demo5.jpg" title=""></li>
-          <li><img src="images/demo6.jpg" title=""></li>
-        </ul>
-        <!-- end Basic jQuery Slider -->
-      </div>
+<div class="slider left sliderheight   " >
+<img src="images/headimage-fiyatlar.jpg" />
 
 
 </div><!--slider end-->
-<div class="main_message left"><p>2012 Sezonda tamamen yenilenerek Assos Antik Liman ‘a 10 km mesafede kendine ait yapay değil tamamen doğal plajı , sessiz, dogaya uyumlu , denize sıfır konumuyla 1993 yılında Assos’un ilk 4 Yıldızlı oteli olarak hizmete başlayan Assos Eden Gardens Hotel; Assos ‘ta bir temel tası gibi her zaman kendini yenileyerek, tarihin kokusunun yanıbaşında doga ananın sunduğu güzellikleri doyasıya yaşamanın adresidir…</p></div>
-
-</div><!--standart_width end-->
-<!--main_content start-->
-<div class="main_content left">
-<div class="standart_width">
-<div class="main_content_top left"><h2 class="mainpageh2" >Assos Antik Liman’ ın yanıbaşında  , Mavi Bayrak Ödüllü kendine ait tamamen doğal plajıyla , Assos’un ilk  4 Yıldızlı otelidir Assos Eden Gardens Hotel … </h2></div>
-<div class="main_content_bottom left">
-<div class="box1 left"><img src="images/box_image1.jpg" class="box_image" alt="" /><h3>ODALARIMIZ</h3><p>25 m2 olan her odasında balkon bulunmakla birlikte bahce katı ve üst kat olmak üzere ayrılan odalarımızın hepsi frenchbed ( doublebed ) veya twinbed ( iki ayrı yatak )seçenekleriyle iki kişilik konaklamalar için uygundur. </p><a href="assos-standart-oda.html" >Devamını gör >>> </a></div>
-<div class="box1 left "><img src="images/assos-main.jpg" class="box_image" alt="" /><h3>ASSOS</h3><p>Çanakkale nin 87 Km. güneyinde bulunan Ayvacık İlçesine Bağlı Assos (Şimdiki Adıyla ; Behramkale) nin tarihi M.Ö 2000 yıllarına dayanmaktadır. Assos kelimesinin kökeni Pedasostur.</p><a href="assos-tarihcesi.html" >Devamını gör >>> </a></div>
-<div class="box1 left"><img src="images/food-main.jpg" class="box_image" /><h3>NE YENIR NE ICILIR?</h3><p>Misafirlerimize yıllardır kazanmış olduğumuz deneyimle 12 Ay Boyunca hizmet verdiğimiz Assos Eden Gardens Hotelimiz de Açık Büfe olarak hazırlanan Yöresel ve Ulusal Tatlar Kış aylarında Yarım Pansiyon ,Yazları ise Her şey Dahil konseptte sunulmaktadır.
-
-</p><a href="assos-en-iyi-restaurant.html" >Devamını gör >>> </a></div>
-
-
-
 
 </div>
 
+<!--main_content start-->
+<div class="main_content2 left ">
 
+<div class="standart_width fiyatlar ">
+
+
+<h2>Assos Eden Gardens Oda Fiyatları</h2>
+
+<%
+' EXCEL dosyasýnýn ilk satýrý alan adlarýný gösterir... Bu örnekte alanlar AD, SOYAD, TEL...
+
+abdulkadir = "DBQ=" & Server.MapPath("fiyatlar.xls") & "; DRIVER={Microsoft Excel Driver (*.xls)};"
+
+Set abdul = Server.CreateObject("ADODB.Connection")
+Set kocer = Server.CreateObject("ADODB.Recordset")
+abdul.open abdulkadir
+
+
+sql="select * from [Sayfa1$]"
+kocer.Open sql, abdul, 1,3
+%>
+<table border="1" width="91%" id="table1" bordercolor="#777777" cellspacing="0" cellpadding="0" style="border-collapse: collapse;margin-top:20px;" align="center">
+	<tr style="text-align:center;font-weight:bold;height:30px;"><td colspan="3"><%=kocer("DATE")%>&nbsp;</td></tr>
+    <tr style="text-align:center;font-weight:bold;height:30px;">
+    
+		<td><b>ODA TİPİ</b></td>
+		
+		<td style="text-align:center;"><b>KONAKLAMA</b></td>
+		<td style="text-align:center;"><b>FİYAT</b></td>
+	</tr>
+
+<%
+do while not kocer.eof
+%>
+
+	<tr>
+		<td><%=kocer("ODA")%>&nbsp;</td>
+		<td style="text-align:center;"><%=kocer("KONAK")%>&nbsp;</td>
+		<td style="text-align:center;"><%=kocer("FIYAT")%>&nbsp;</td>
+		
+	</tr>
+
+<%    
+kocer.movenext
+loop
+
+
+kocer.close
+Set kocer = nothing
+abdul.close
+Set abdul = nothing
+%>
+</table>
+
+
+
+<%
+' EXCEL dosyasýnýn ilk satýrý alan adlarýný gösterir... Bu örnekte alanlar AD, SOYAD, TEL...
+
+abdulkadir = "DBQ=" & Server.MapPath("fiyatlar2.xls") & "; DRIVER={Microsoft Excel Driver (*.xls)};"
+
+Set abdul = Server.CreateObject("ADODB.Connection")
+Set kocer = Server.CreateObject("ADODB.Recordset")
+abdul.open abdulkadir
+
+
+sql="select * from [Sayfa1$]"
+kocer.Open sql, abdul, 1,3
+%>
+<table border="0" width="91%" id="table1" bordercolor="#000000" cellspacing="0" cellpadding="0" style="border-collapse: collapse;margin-top:20px;font-size:12px;" align="center">
+	
+    <tr>
+    
+		<td><b>Aktiviteler</b></td>
+		
+		
+	</tr>
+
+<%
+do while not kocer.eof
+%>
+
+	<tr>
+		<td><%=kocer("AKTIVITE")%>&nbsp;</td>
+		
+		
+	</tr>
+
+<%    
+kocer.movenext
+loop
+
+
+kocer.close
+Set kocer = nothing
+abdul.close
+Set abdul = nothing
+%>
+</table>
+
+
+<!--main_content2_left end-->
+<!--video start-->
+<div class="video left"><p>“ Tesis 2012 sezonunda tamamen yenilenmiştir . Sitede su anda görüntülenen 2012 yılı öncesi çekimlerdir. 2013 yılı cekimlerimizi en yakın zamanda buradan izleyebilirsiniz. “ </p><img src="images/hand.png" /></div>
+<!--video end-->
 </div>
 </div><!--main_content end-->
 <div class="standart_width">
-<!--notice start-->
-<div class="notice left standart_width">
-<div class="notice_text left"><p>deneme duyurular test duyurular deneme deneme</p></div>
 
-</div>
-<!--notice end-->
 <!--res area start-->
 
 <div class="res_area left">
@@ -285,7 +387,7 @@
 <!--other hotels end-->
 <!--tweet start-->
 <div class="tweet left standart_width">
-<div class="text left "><p>Let the pie smashing begin. The game we created for Mrs Mac's has just gone live. We had so much fun on this project.</p><p class="author"><a href="http://twitter.com/assosedengroup">@assosedengroup</a></p></div>
+<div class="text left"><p>Let the pie smashing begin. The game we created for Mrs Mac's has just gone live. We had so much fun on this project.</p><p class="author"><a href="http://twitter.com/assosedengroup">@assosedengroup</a></p></div>
 </div>
 <!--tweet end---->
 </div>
@@ -302,7 +404,7 @@ Ayvacık / ÇANAKKALE </p><p>T <span>(0286) 764 02 90 </span><br>
 				E <a href="mailto:info@assosedengardens.com">info@assosedengardens.com</a></p></div>
 <div class="part2_3 left"><h6>Online Katalog</h6><p><a href="assosedengroup_katalog.pdf" class="catalog">Otelimizin .pdf formatında kataloğunu indirebilirsiniz.</a></p></div>
 <div class="part3_3 right"><h6>Maillist</h6><p>Yeniliklerden Haberdar Olun</p>
-<form id="newsletter" action="" method="">
+<form id="newsletter" action="" method="post">
 				<input type="text" id="emailsub" name="cm-xtluyy-xtluyy">
 				<label for="emailsub">Your email address</label>
 				<button type="submit">Submit</button>
